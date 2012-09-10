@@ -38,7 +38,7 @@ public class Activity01 extends Activity {
 								AlertDialog dlg = new AlertDialog.Builder(
 										Activity01.this)
 										.setTitle("登录框")
-										// Tom Xue: embedded view
+										// Tom Xue: the DialogView is an embedded view
 										.setView(DialogView)
 										// 设置自定义对话框的样式
 										.setPositiveButton(
@@ -53,7 +53,7 @@ public class Activity01 extends Activity {
 																.show(Activity01.this,
 																		"请等待...",
 																		"正在为你登录...",
-																		true);
+																		false);	// Tom Xue: true or false, no difference indeed
 
 														new Thread() {
 															public void run() {
